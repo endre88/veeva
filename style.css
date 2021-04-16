@@ -1,0 +1,142 @@
+.bar:hover {
+	fill: brown;
+}
+.bar{
+	padding:30px;
+}
+.div1,.customer{
+	border:1px solid;
+	box-shadow: 3px 3px 25px 8px #afaeae;
+}
+
+body{
+	padding-top: 150px;
+}
+
+span{
+	color:blue;
+}
+.szurtek{
+	font-size:1.5rem;
+	font-family:"Calibri";
+	text-align:center;
+	padding-top:50px;
+}
+.unitsold,.unitsoldrevenue{
+	margin-bottom:10px;
+	font-size:2em;
+}
+.result1,.result2{
+	font-size: 1.5rem;
+}
+svg{
+	padding-left: 2rem;
+	z-index: 9999; 
+	width:100%;
+	min-height:45vh;
+	/*border-bottom:1px solid*/
+}
+
+.main{
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+@media (min-width:768px){
+	.main{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+img{
+	z-index: 9999; 
+	position:absolute; 
+	top:-40px;
+	left:250px;
+	width:250px;
+}
+
+.table1,.table2{
+	margin:50px 0 0 50px;
+	width:600px;
+	text-align:center;
+}
+.customer{
+	margin:50px 0 0 50px;
+	width:600px;
+}
+
+.customerfilter{
+	margin:15px;
+	font-size: 1.5rem;
+}
+
+.wrapper{
+	display:flex;
+	flex-direction:column;
+	width:600px;
+	margin-left:50px;
+}
+.wrapper p{
+	text-align:center;
+	font-size: 1.5rem;
+}
+.select {
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+	
+	max-width: 60%;
+	min-width: 40%;
+}    .select select {
+		font-family: 'Arial';
+		display: inline-block;
+		cursor: pointer;
+		padding: 10px 17px;
+		outline: 0;
+		border: 1px dashed #b84646;
+		border-radius: 50px;
+		background: #d2d7ec;
+		color: #7b7b7b;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+		.select select::-ms-expand {
+			display: none;
+		}
+		.select select:hover,
+		.select select:focus {
+			color: #995757;
+			background: #f0e4e4;
+		}
+		.select select:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+.select_arrow {
+	position: relative;
+	top: 2px;
+	right: 30px;
+	width: 3px;
+	height: 3px;
+	border: solid #c69494;
+	border-width: 0 6px 6px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+	border-color: #701717;
+}
+.select select:disabled ~ .select_arrow {
+	border-top-color: #cccccc;
+}
+.szurtek{
+	margin:0;
+	font-size:2rem;
+}
